@@ -1,0 +1,155 @@
+.main-grid  {
+  width: 70%;
+  margin: auto;   
+  padding: 3rem; 
+}
+
+.header-one {
+  justify-content: space-between;
+  align-self: start;
+  z-index: 100;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap, var(--space-4));
+}
+
+.description-about{
+  line-height: 190%;
+  width: 26rem;
+}
+
+.footer-one{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;                       
+  transform: translate(0, -50%);
+  left: -20px;
+  z-index: 100;
+  padding: .3rem;
+  background-color: white;
+  border-radius: 0 6px 6px 0;
+} 
+
+.networking-hover:hover{
+  filter: opacity(0.7);
+}
+
+
+.footer-one a{
+  margin-left: 1rem;
+}
+
+
+.grid-even-columns {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+
+
+.nav-list {
+  list-style: none;
+  font-weight: 700;
+}
+
+
+
+.nav-grid {
+  color: var(--clr-neutral-900);
+  z-index: 10;
+}
+
+.container-bg,
+.nav-grid-bg {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 500ms ease;
+}
+
+.container-bg {
+  background: var(--clr-primary-400);
+}
+
+.nav-grid-bg {
+  background: var(--clr-neutral-100);
+}
+
+.nav-grid-bg,
+.nav-grid {
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 500ms ease;
+}
+
+.nav-grid-bg {
+  transition-delay: 500ms;
+}
+
+.container-bg,
+.container-main {
+  clip-path: inset(0 0 0 0);
+  transition: clip-path 500ms ease;
+}
+
+[data-big-nav-open] .nav-grid-bg,
+[data-big-nav-open] .nav-grid {
+  clip-path: inset(0 0 0 0);
+}
+
+[data-big-nav-open] .nav-grid {
+  transition-delay: 200ms;
+}
+
+[data-big-nav-open] .container-bg,
+[data-big-nav-open] .container-main {
+  clip-path: inset(0 0 0 100%);
+}
+
+.closed-clip-path {
+  clip-path: inset(0 100% 0 0) !important;
+}
+
+.container-main {
+  display: grid;
+  position: absolute;
+  top: 31%;
+  margin-left: 3%;
+  width: 60%;
+  color: var(--clr-neutral-100);
+}
+
+.video-bg,
+.nav-grid-bg,
+.container-bg {
+  position: absolute;
+  inset: calc(-1 * var(--body-padding));
+}
+
+.container-bg {
+  z-index: -2;
+  mix-blend-mode: multiply;
+  background: var(--clr-primary-400);
+}
+
+.nav-grid-bg {
+  z-index: -1;
+  background: var(--display-carrossel);
+  mix-blend-mode: saturation;
+  transition: clip-path 300ms ease;
+}
+
+.video-bg {
+  z-index: -3;
+}
+
+.video-bg video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
+

@@ -1,0 +1,38 @@
+*{
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-400: linear-gradient(181.85deg, #16171A 54.54%, #004AD9 301.05%);
+  --clr-neutral-100: #fff;
+  --clr-neutral-300: hsl(0 0% 70%);
+  --clr-neutral-900: #F3F3F3;
+  --display-carrossel: #000000;
+
+  --font-size-300: 0.975rem;
+  --font-size-400: 1.125rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.75rem;
+  --font-size-700: 3rem;
+
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  --body-padding: var(--space-8);
+}
+
+
+body {
+  /* display: flex; */
+  font-size: var(--fs-400);
+  font-family: system-ui, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}

@@ -1,0 +1,33 @@
+a{
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: var(--font-size-700);
+  font-weight: 700;
+}
+
+#btn{
+  font-weight: 600;
+  color: white;
+  border: none; 
+  width: 163px;
+  height: 48px;
+
+  background: #2F3136;
+  border-radius: 8px;
+
+  transition: opacity 200ms;
+}
+
+#btn:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+
+span{
+  font-size: 1.6rem;
+}
+
