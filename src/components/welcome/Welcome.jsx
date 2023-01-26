@@ -3,19 +3,20 @@ import { Box, Typography, Container, Link, Divider } from '@mui/material'
 import LinkedinImg from '../../assets/images/linkedin.svg'
 import GithubImg from '../../assets/images/github.svg'
 
-export function Main() {
+export function Welcome() {
   return (
     <Box>
       <Container>
-        <Box>
-          <Box>
-            <Typography>
-              Sobre mim
-            </Typography>
-            <Typography>
-              Habilidades
-            </Typography>
-          </Box>
+        <Box sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, pt: 4 }}>
+          <Typography variant='h6' sx={{ mr: 2 }}>
+            Sobre
+          </Typography>
+          <Typography variant='h6' sx={{ mr: 2 }}>
+            Experiências
+          </Typography>
+          <Typography variant='h6' >
+            Projetos
+          </Typography>
         </Box>
         <Box sx={{
           height: '80vh',
@@ -59,11 +60,7 @@ export function Main() {
               <img src={GithubImg} alt='' />
             </Link>
           </Box>
-
         </Box>
-
-
-        <Box>teste</Box>
       </Container >
       <Divider color='#2C2C3F' />
     </Box>

@@ -1,4 +1,4 @@
-import { createTheme, Typography } from "@mui/material";
+import { createTheme } from "@mui/material";
 
 export const theme = createTheme({
   palette: {
@@ -9,7 +9,8 @@ export const theme = createTheme({
       default: '#08081D'
     }
   },
+
   typography: {
-    fontFamily: '"acumin-pro", sans-serif'
+    fontFamily: '"acumin-pro", sans-serif',
   }
 })
