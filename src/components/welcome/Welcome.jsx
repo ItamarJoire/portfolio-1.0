@@ -1,68 +1,43 @@
-import { Box, Typography, Container, Link, Divider } from '@mui/material'
-
-import LinkedinImg from '../../assets/images/linkedin.svg'
-import GithubImg from '../../assets/images/github.svg'
+import { Box, Typography, useTheme } from '@mui/material'
+import { BoxContainer } from '../../containers'
 
 export function Welcome() {
-  return (
-    <Box>
-      <Container>
-        <Box sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, pt: 4 }}>
-          <Typography variant='h6' sx={{ mr: 2 }}>
-            Sobre
-          </Typography>
-          <Typography variant='h6' sx={{ mr: 2 }}>
-            Experiências
-          </Typography>
-          <Typography variant='h6' >
-            Projetos
-          </Typography>
-        </Box>
-        <Box sx={{
-          height: '80vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center'
-        }}>
-          <Typography
-            variant='h6'
-            color='#1B1B30'
-          >
-            Sou
-          </Typography>
-          <Typography
-            textTransform='uppercase'
-            fontWeight='700'
-            variant='h3'
-          >
-            Desenvolvedor <br /> Front-end<Box component='span' color='#51459E'>.</Box>
-          </Typography>
-        </Box>
+  const theme = useTheme()
 
-        <Box sx={{ position: 'fixed', right: 0, top: '44%' }}>
-          <Box sx={{ bgcolor: '#0A66C2', px: .9, pt: .6, borderTopLeftRadius: 6, borderBottomLeftRadius: 6 }}
-          >
-            <Link
-              href='https://www.linkedin.com/in/itamarjoire/'
-              target='_blank'
-              underline='always'
-            >
-              <img src={LinkedinImg} alt='' />
-            </Link>
-          </Box>
-          <Box sx={{ bgcolor: '#4C5155', px: .9, pt: .4, borderTopLeftRadius: 6, borderBottomLeftRadius: 6 }}
-          >
-            <Link
-              href='https://github.com/ItamarJoire'
-              target='_blank'
-              underline='always'
-            >
-              <img src={GithubImg} alt='' />
-            </Link>
-          </Box>
-        </Box>
-      </Container >
-      <Divider color='#2C2C3F' />
-    </Box>
+  return (
+    <BoxContainer sx={{
+      px: { sm: theme.spacing(12) },
+      height: '100vh'
+    }}
+    >
+      <Box sx={{
+        height: '76vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+      }}>
+        <Typography
+          variant='h6'
+          color='#1B1B30'
+        >
+          Sou
+        </Typography>
+        <Typography
+          textTransform='uppercase'
+          fontWeight='700'
+          variant='h4'
+          sx={{ mb: 3 }}
+        >
+          Desenvolvedor <br /> Front-end<Box component='span' color='#51459E'>.</Box>
+        </Typography>
+        <Typography
+          fontFamily='Open Sans, sans-serif'
+          variant='body1'
+          maxWidth='310px'
+        >
+          Trabalhando desde a concepção do UI Design à codificação.
+        </Typography>
+      </Box>
+    </BoxContainer >
   )
 }

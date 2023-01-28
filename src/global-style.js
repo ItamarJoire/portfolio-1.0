@@ -12,5 +12,12 @@ export const theme = createTheme({
 
   typography: {
     fontFamily: '"acumin-pro", sans-serif',
+    fontSize: 15,
+    body1: {
+      fontSize: 19,
+      color: '#DCDCDC',
+      lineHeight: '28px',
+      letterSpacing: '.6px'
+    }
   }
 })
