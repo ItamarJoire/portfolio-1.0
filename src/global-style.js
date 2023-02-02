@@ -10,14 +10,36 @@ export const theme = createTheme({
     }
   },
 
-  typography: {
-    fontFamily: '"acumin-pro", sans-serif',
-    fontSize: 15,
-    body1: {
-      fontSize: 19,
-      color: '#DCDCDC',
-      lineHeight: '28px',
-      letterSpacing: '.6px'
-    }
+  typography: {   
+    fontFamily: '"Rubik", sans-serif',
   }
 })
+
+theme.typography.h2 = {
+  fontSize: 40,
+  fontWeight: 700,
+  lineHeight: '105%',
+  
+  [theme.breakpoints.up('sm')]: {
+    fontSize: 64
+  },
+}
+
+theme.typography.h6 = {
+  fontSize: 20,
+  fontWeight: 700,
+  lineHeight: '100%',
+  color: '#1B1B30',
+  
+  [theme.breakpoints.up('sm')]: {
+    fontSize: 34
+  },
+}
+
+theme.typography.subtitle1 = {
+  fontSize: 16,
+  fontWeight: 400,
+  lineHeight: '28px',
+  letterSpacing: '.6px',
+  color: '#DCDCDC',
+}

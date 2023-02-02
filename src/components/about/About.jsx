@@ -1,5 +1,7 @@
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, List, ListItem, ListItemText } from "@mui/material";
 import { BoxContainer, TitleContainer } from "../../containers";
+
+import IconCircle from '../../assets/images/icon-circle.svg'
 
 export function About() {
   return (
@@ -19,19 +21,50 @@ export function About() {
           <TitleContainer name='Sobre mim' />
 
           <Typography
-            variant='body1'
+            variant='subtitle1'
             fontFamily='Open Sans, sans-serif'
             maxWidth='100%'
             sx={{ mt: 4 }}
           >
-            Olá, meu nome é Itamar Joire sou desenvolvedor que ama codificação, design, que se preocupa profundamente com a experiência do usuário, trabalhar em equipe e de participar de todo processo criativo de soluções que agreguem valor.
+            Olá, meu nome é Itamar Joire e gosto de desenvolver para web. Desde a concepção do UI design até a codificação.  Sempre com foco em garantir uma melhor experiência para o usuário. Gosto de trabalhar em equipe e de participar de todo processo criativo.
             <br />
             <br />
-            Atualmente estou cursando Sistemas de Informação pela UFBA com previsão de conclusão para 2023.2.
+            Estou cursando Sistemas de Informação pela UFBA com previsão de conclusão para 2024.2.
             <br />
             <br />
-            Ah, recentemente resolvi criar um blog no qual estarei postando conteúdos e dicas sobre front-end.
+            Aqui estão algumas tecnologias com as quais trabalho recentemente:
           </Typography>
+          <List sx={{ display: 'flex' }}>
+            <Box >
+              <Box display='flex' mr={8}>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='JavaScript' />
+              </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='TypeScript' />
+              </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='React' />
+              </Box>
+            </Box>
+
+            <Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='Scss' />
+              </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='Material UI' />
+              </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='Figma' />
+              </Box>
+            </Box>
+          </List>
         </BoxContainer>
       </Box >
     </Box >

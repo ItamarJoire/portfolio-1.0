@@ -1,6 +1,8 @@
-import { Box, CardMedia, Grid } from '@mui/material';
+import { Box, CardContent, CardMedia, Grid, Link, ListItemText } from '@mui/material';
 import { TitleContainer, SubtitleContainer, ParagraphContainer, BoxContainer } from '../../containers';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+
+import IconExternalLink from '../../assets/images/icon-external-link.svg'
+import IconCircle from '../../assets/images/icon-circle.svg'
 
 const techs = [
   'React',
@@ -19,15 +21,35 @@ export function Work() {
               <CardMedia
                 image={"https://source.unsplash.com/random/?technology/41"}
                 sx={{ width: '100%', height: '100%' }}
-              />
+              >
+                <Box
+                  sx={{
+                    position: 'relative',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    alignItems: 'space-around',
+                    height: '100%',
+                    background: 'linear-gradient(359.44deg, #08081D -6.72%, rgba(0, 0, 0, 0) 99.48%)'
+                  }}
+                >
+                  <CardContent sx={{ display: 'flex', justifyContent: 'end', p: 2 }}>
+                    <Link href={'https://github.com/ItamarJoire'} target='_blank' sx={{ cursor: 'pointer' }}>
+                      <img src={IconExternalLink} alt='Ícone para abrir projeto' />
+                    </Link>
+                  </CardContent>
+                </Box>
+              </CardMedia>
             </Box>
+
             <Box>
               <SubtitleContainer name='Tecnologias usadas' />
               <Box >
                 {techs.map(item => {
                   return (
-                    <Box sx={{ display: 'flex' }}>
-                      <ArrowRightIcon />{item}
+                    <Box display='flex' mr={8}>
+                      <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                      <ListItemText primary={item} />
                     </Box>
                   )
                 })}

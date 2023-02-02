@@ -16,27 +16,24 @@ export function Welcome() {
         flexDirection: 'column',
         justifyContent: 'center',
       }}>
-        <Typography
-          variant='h6'
-          color='#1B1B30'
-        >
+        <Typography variant='h6'>
           Sou
         </Typography>
         <Typography
-          textTransform='uppercase'
           fontWeight='700'
-          variant='h4'
-          sx={{ mb: 3 }}
+          variant='h2'
+          textTransform='uppercase'
+          sx={{ mb: 3, mt: 1 }}
         >
           Desenvolvedor <br /> Front-end<Box component='span' color='#51459E'>.</Box>
         </Typography>
         <Typography
-          fontFamily='Open Sans, sans-serif'
-          variant='body1'
+          variant='subtitle1'
           maxWidth='310px'
         >
           Trabalhando desde a concepção do UI Design à codificação.
         </Typography>
+
       </Box>
     </BoxContainer >
   )
