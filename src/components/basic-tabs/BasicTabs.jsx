@@ -25,9 +25,8 @@ function TabPanel(props) {
 
 export function BasicTabs() {
   const theme = useTheme()
-  const lgUp = useMediaQuery(theme.breakpoints.up('lg'))
+  const mdUp = useMediaQuery(theme.breakpoints.up('md'))
   const [value, setValue] = useState(0);
-
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -37,38 +36,38 @@ export function BasicTabs() {
     <BoxContainer>
       <TitleContainer name='Projetos' />
       <Box sx={{
-        mt: 3,
+        mt: 4,
         width: '100%',
-        display: { xs: 'block', lg: 'flex' }
+        display: { xs: 'block', md: 'flex' }
       }}
       >
         <Box sx={{
-          borderBottom: { xs: 1, lg: 0 },
-          borderColor: 'rgba(255, 255, 255, 0.11)',
-          display: { xs: 'block', lg: 'flex' }
+          borderBottom: { xs: 1, md: 0 },
+          color: 'rgba(255, 255, 255, 0.11)',
+          display: { xs: 'block', md: 'flex' }
         }}
         >
           <Tabs
             sx={{
-              mr: 12,
-              width: { xs: '100%', lg: 160 },
-              height: { xs: 0, lg: 300 },
-              borderRight: { xs: 0, lg: 1 },
-              borderColor: 'rgba(255, 255, 255, 0.11)',
+              mr: 10,
+              width: { xs: '100%', md: 160 },
+              height: { xs: 0, md: 300 },
+              borderRight: { xs: 0, md: 1 },
+              color: 'rgba(255, 255, 255, 0.11)',
             }}
             variant="scrollable"
             value={value}
-            orientation={lgUp ? 'vertical' : 'horizontal'}
+            orientation={mdUp ? 'vertical' : 'horizontal'}
             onChange={handleChange}
             textColor='primary'
             indicatorColor='primary'
             scrollButtons='auto'
             allowScrollButtonsMobile
           >
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: { xs: 17, lg: 20 } }} label="Web Turism" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: { xs: 17, lg: 20 } }} label="Projeto 2" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: { xs: 17, lg: 20 } }} label="Projeto 3" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: { xs: 17, lg: 20 } }} label="Projeto 4" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Web Turism" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 2" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 3" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 4" />
           </Tabs>
         </Box>
 

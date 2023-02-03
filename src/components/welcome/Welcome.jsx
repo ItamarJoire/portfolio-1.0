@@ -1,8 +1,14 @@
-import { Box, Typography, useTheme } from '@mui/material'
+import { Box, Typography, useTheme, useMediaQuery, Link } from '@mui/material'
 import { BoxContainer } from '../../containers'
+
+import { Social } from '../social/Social'
+
+import IconLinkedin from '../../assets/images/linkedin-icon-mobile.svg'
+import IconGithub from '../../assets/images/github-icon-mobile.svg'
 
 export function Welcome() {
   const theme = useTheme()
+  const mdDown = useMediaQuery(theme.breakpoints.down('md'))
 
   return (
     <BoxContainer sx={{
@@ -34,6 +40,18 @@ export function Welcome() {
           Trabalhando desde a concepção do UI Design à codificação.
         </Typography>
 
+        {mdDown === true ?
+          (<Box mt={4}>
+            <Link mr={2} href='https://www.linkedin.com/in/itamarjoire/' target='_blank'>
+              <img src={IconLinkedin} alt='' />
+            </Link>
+            <Link href='https://github.com/ItamarJoire' target='_blank'>
+              <img src={IconGithub} alt='' />
+            </Link>
+          </Box>
+          ) : (
+            <Social />
+          )}
       </Box>
     </BoxContainer >
   )

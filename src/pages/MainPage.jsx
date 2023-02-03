@@ -1,4 +1,4 @@
-import { Header, Welcome, About, BasicTabs, Contact } from "../components"
+import { Header, Welcome, About, BasicTabs, Footer } from "../components"
 import { Box, Divider } from '@mui/material'
 
 export function MainPage() {
@@ -22,9 +22,7 @@ export function MainPage() {
 
         <Divider color='#2C2C3F' />
 
-        <div id='contact'>
-          <Contact />
-        </div>
+        <Footer />
       </Box>
     </>
   )

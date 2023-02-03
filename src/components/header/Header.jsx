@@ -55,15 +55,6 @@ export function Header() {
             Projetos<Box component='span' color='#08081D'>.</Box>
           </Typography>
         </AnchorLink >
-
-        <AnchorLink href='#contact' style={{ color: 'white', textDecoration: 'none' }}>
-          <Typography
-            variant='h4'
-            textTransform='uppercase'
-          >
-            Contato<Box component='span' color='#08081D'>.</Box>
-          </Typography>
-        </AnchorLink >
       </Box>
     </Box>
   );
@@ -109,13 +100,6 @@ export function Header() {
                 PROJETOS<Box component='span' color='#51459E'>.</Box>
               </Typography>
             </AnchorLink>
-            <Typography
-              variant='h5'
-              textTransform='uppercase'
-              mr='16px'
-            >
-              CONTATO<Box component='span' color='#51459E'>.</Box>
-            </Typography>
 
           </Box>
         )}
