@@ -10,7 +10,6 @@ export function About() {
       bgcolor: '#0C0C1E',
     }}>
       <Box
-        maxWidth='md'
         sx={{
           display: 'flex',
           flexDirection: { xs: 'column', sm: 'row' },
@@ -22,7 +21,6 @@ export function About() {
 
           <Typography
             variant='subtitle1'
-            fontFamily='Open Sans, sans-serif'
             maxWidth='100%'
             sx={{ mt: 4 }}
           >

@@ -6,18 +6,18 @@ import IconCircle from '../../assets/images/icon-circle.svg'
 
 const techs = [
   'React',
-  'TypeScript',
+  'NodeJs',
   'Material UI'
 ]
 
-export function Work() {
+export function WorkTwo() {
   return (
     <Grid container spacing={2}>
       <Grid item xs={12} sm={6}>
         <Box sx={{ pr: { xs: 'auto', sm: 1 } }} >
           <Box sx={{ mt: 4, width: '100%', height: '240px' }}>
             <CardMedia
-              image={"https://source.unsplash.com/random/?technology/41"}
+              image={"https://source.unsplash.com/random/?technology/91"}
               sx={{ width: '100%', height: '100%' }}
             >
               <Box
