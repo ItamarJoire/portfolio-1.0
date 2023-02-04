@@ -1,9 +1,11 @@
-import { Header, Welcome, About, BasicTabs, Footer, BackToTop } from "../components"
+import { Header, Welcome, About, BasicTabs, Footer, BackToTop, PreLoader } from "../components"
 import { Box, Divider } from '@mui/material'
 
 export function MainPage() {
   return (
     <>
+
+      <PreLoader />
       <Box sx={{ height: '100vh' }}>
         <Header />
 

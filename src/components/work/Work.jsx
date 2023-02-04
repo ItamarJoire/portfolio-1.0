@@ -18,7 +18,7 @@ export function Work() {
           <Box sx={{ mt: 4, width: '100%', height: '240px' }}>
             <CardMedia
               image={"https://source.unsplash.com/random/?technology/41"}
-              sx={{ width: '100%', height: '100%', borderRadius: 2 }}
+              sx={{ width: '100%', maxWidth: '420px', height: '100%', borderRadius: 2 }}
             >
               <Box
                 sx={{

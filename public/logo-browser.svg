@@ -1,0 +1,27 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logo-browser">
+<circle id="Ellipse 313" cx="18" cy="18" r="18" fill="#08081D"/>
+<g id="logo">
+<path id="icon-i" d="M19.5133 13.1812H17V29.5175C18.1709 28.5094 19.4782 27.3502 19.5133 25.6333C19.5483 23.9165 19.5133 13.1812 19.5133 13.1812Z" fill="url(#paint0_linear_888_125)" stroke="url(#paint1_linear_888_125)" stroke-width="2" stroke-linejoin="round"/>
+<path id="icon-pingo-i" d="M19.5133 8.51329H17V6H19.5133V8.51329Z" fill="url(#paint2_linear_888_125)" stroke="url(#paint3_linear_888_125)" stroke-width="2" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_888_125" x1="18.2644" y1="13.1812" x2="18.2644" y2="29.5175" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7A72AD"/>
+<stop offset="1" stop-color="#51459E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_888_125" x1="18.2644" y1="13.1812" x2="18.2644" y2="29.5175" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7A72AD"/>
+<stop offset="1" stop-color="#51459E"/>
+</linearGradient>
+<linearGradient id="paint2_linear_888_125" x1="18.2566" y1="6" x2="18.2566" y2="8.51329" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7A72AD"/>
+<stop offset="1" stop-color="#51459E"/>
+</linearGradient>
+<linearGradient id="paint3_linear_888_125" x1="18.2566" y1="6" x2="18.2566" y2="8.51329" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7A72AD"/>
+<stop offset="1" stop-color="#51459E"/>
+</linearGradient>
+</defs>
+</svg>

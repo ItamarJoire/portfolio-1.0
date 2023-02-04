@@ -5,3 +5,67 @@
   padding: 20px;
   cursor: pointer;
 }
+
+// Pré Loader 
+.loader-bg{
+  position: fixed;
+  z-index: 999999;
+  background-color: #08081D;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#background{
+  fill-opacity: 0;
+  stroke-width: 1;
+  stroke-dasharray: 150 0;
+  stroke-dashoffset: 20;
+  animation: logo 4s ease 0s backwards;
+}
+
+#icon-i, #icon-pingo-i{
+  fill-opacity: 0;
+  stroke-width: 0;
+  opacity: 0;
+  animation: i 4s ease 0s backwards;
+}
+
+@keyframes i {
+  0%{
+    fill-opacity: 0;
+    opacity: 0;
+  }
+  30%{
+    fill-opacity: 1;
+    opacity: 1;
+  }
+  100%{
+    fill-opacity: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0%{
+    fill-opacity: 0;
+    stroke-dasharray: 1 1000;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    opacity: 1;
+  }
+  30%{
+    fill-opacity: 1;
+    stroke-dasharray: 150 1;
+    stroke-dashoffset: 0;
+    stroke-width: 1;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    stroke-dasharray: 1000 1;
+  }
+}

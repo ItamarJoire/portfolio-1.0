@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export function Header() {
   return (
     <Box
-      sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, m: 4 }}>
+      sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, p: 4 }}>
       <AnchorLink href='#about' offset='-80' style={{ color: 'white', textDecoration: 'none' }}>
         <Typography
           variant='h5'
