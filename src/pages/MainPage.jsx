@@ -1,4 +1,4 @@
-import { Header, Welcome, About, BasicTabs, Footer } from "../components"
+import { Header, Welcome, About, BasicTabs, Footer, BackToTop } from "../components"
 import { Box, Divider } from '@mui/material'
 
 export function MainPage() {
@@ -6,6 +6,7 @@ export function MainPage() {
     <>
       <Box sx={{ height: '100vh' }}>
         <Header />
+
         <Welcome />
 
         <Divider color='#2C2C3F' />
@@ -23,6 +24,8 @@ export function MainPage() {
         <Divider color='#2C2C3F' />
 
         <Footer />
+
+        <BackToTop />
       </Box>
     </>
   )
