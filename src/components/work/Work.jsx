@@ -62,14 +62,14 @@ export function Work() {
         }}
         >
           <Box>
-            <SubtitleContainer name='Minha função' />
+            <SubtitleContainer name='Sobre' />
             <ParagraphContainer
-              text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis velit itaque molestiae praesentium tempore  nam.'
+              text='Site de turismo que trás informações como bares, comércios, pousadas, etc.'
             />
           </Box>
 
           <Box>
-            <SubtitleContainer name='Dificuldades do projeto' />
+            <SubtitleContainer name='Dificuldades' />
             <ParagraphContainer
               text='Lorem ipsum dolor sit, amet consectetur <adipisicing elit. Corporis velit itaque molestiae praesentium tempore nam.'
             />

@@ -17,7 +17,7 @@ export function Welcome() {
     }}
     >
       <Box sx={{
-        height: '76vh',
+        height: '64vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -37,7 +37,7 @@ export function Welcome() {
           variant='subtitle1'
           maxWidth='310px'
         >
-          Trabalhando desde a concepção do UI Design à codificação.
+          Trabalhando desde a concepção da interface do usuário à codificação.
         </Typography>
 
         {mdDown === true ?
