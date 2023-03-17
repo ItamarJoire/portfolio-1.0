@@ -7,7 +7,8 @@ import IconCircle from '../../assets/images/icon-circle.svg'
 const techs = [
   'React',
   'TypeScript',
-  'Material UI'
+  'Material UI',
+  'React Slick'
 ]
 
 export function Work() {
@@ -18,7 +19,7 @@ export function Work() {
           <Box sx={{ mt: 4, width: '100%', height: '240px' }}>
             <CardMedia
               image={"https://source.unsplash.com/random/?technology/41"}
-              sx={{ width: '100%', maxWidth: '420px', height: '100%', borderRadius: 2 }}
+              sx={{ width: '100%', height: '100%', borderRadius: 2 }}
             >
               <Box
                 sx={{
@@ -64,21 +65,21 @@ export function Work() {
           <Box>
             <SubtitleContainer name='Sobre' />
             <ParagraphContainer
-              text='Site de turismo que trás informações como bares, comércios, pousadas, etc.'
+              text='Site de turismo que trás informações das localidades da Ilha Turism.'
             />
           </Box>
 
           <Box>
-            <SubtitleContainer name='Dificuldades' />
+            <SubtitleContainer name='Desafios' />
             <ParagraphContainer
-              text='Lorem ipsum dolor sit, amet consectetur <adipisicing elit. Corporis velit itaque molestiae praesentium tempore nam.'
+              text='O maior desafio foi criar uma context com TypeScript e fazer a Query das informações das localidades no servidor.'
             />
           </Box>
 
           <Box>
-            <SubtitleContainer name='Minha solucão' />
+            <SubtitleContainer name='Solução' />
             <ParagraphContainer
-              text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis velit itaque molestiae praesentium tempore nam.'
+              text='Utilizei o framework Material UI para agilizar, principalmente, na responsividade do projeto e padronizar minhas cores, textos, etc. E o React Slick por conta da facilidade de construir os carrosséis.'
             />
           </Box>
 
