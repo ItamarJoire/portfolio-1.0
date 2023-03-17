@@ -75,17 +75,16 @@ export function Work() {
           <Box>
             <SubtitleContainer name='Desafios' />
             <ParagraphContainer
-              text='O maior desafio foi criar uma context com TypeScript e fazer a Query das informações das localidades no servidor.'
+              text='O maior desafio foi criar um context com TypeScript e fazer a Query das informações das localidades no servidor.'
             />
           </Box>
 
           <Box>
             <SubtitleContainer name='Solução' />
             <ParagraphContainer
-              text='Utilizei o framework Material UI para agilizar, principalmente, na responsividade do projeto e padronizar minhas cores, textos, etc. E o React Slick por conta da facilidade de construir os carrosséis.'
+              text='Utilizei o framework Material UI para agilizar, principalmente, na responsividade e padronizar cores, textos e etc. E o React Slick por conta da facilidade de construir os carrosséis.'
             />
           </Box>
-
         </Box>
       </Grid>
     </Grid >
