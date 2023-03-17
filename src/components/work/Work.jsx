@@ -4,6 +4,8 @@ import { SubtitleContainer, ParagraphContainer } from '../../containers';
 import IconExternalLink from '../../assets/images/icon-external-link.svg'
 import IconCircle from '../../assets/images/icon-circle.svg'
 
+import ImageProject from '../../assets/images/cover-ilha-turism.png'
+
 const techs = [
   'React',
   'TypeScript',
@@ -17,9 +19,10 @@ export function Work() {
       <Grid item xs={12} sm={6}>
         <Box sx={{ pr: { xs: 'auto', sm: 1 } }} >
           <Box sx={{ mt: 4, width: '100%', height: '240px' }}>
+
             <CardMedia
-              image={"https://source.unsplash.com/random/?technology/41"}
-              sx={{ width: '100%', height: '100%', borderRadius: 2 }}
+              image={ImageProject}
+              sx={{ width: '100%', height: '100%', borderRadius: 2, }}
             >
               <Box
                 sx={{
