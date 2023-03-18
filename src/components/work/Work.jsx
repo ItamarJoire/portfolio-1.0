@@ -36,7 +36,7 @@ export function Work() {
                 }}
               >
                 <CardContent sx={{ display: 'flex', justifyContent: 'end', p: 2 }}>
-                  <Link href={'https://github.com/ItamarJoire'} target='_blank' sx={{ cursor: 'pointer' }}>
+                  <Link href={'https://github.com/ItamarJoire/site-turism'} target='_blank' sx={{ cursor: 'pointer' }}>
                     <img src={IconExternalLink} alt='Ícone para abrir projeto' />
                   </Link>
                 </CardContent>
