@@ -1,13 +1,32 @@
 import { Header, Welcome, About, BasicTabs, Footer, BackToTop, PreLoader } from "../components"
-import { Box, Divider } from '@mui/material'
+import { Box, Divider, useTheme, useMediaQuery } from '@mui/material'
+
+import MenuIcon from '@mui/icons-material/Menu';
 
 export function MainPage() {
+  const theme = useTheme()
+  const smDown = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <>
-
       <PreLoader />
+
       <Box sx={{ height: '100vh' }}>
-        <Header />
+
+        {
+          smDown === true ?
+            (<Box>
+              <MenuIcon />
+            </Box>) : (
+              <Header />)
+        }
+
+        <Box sx={{ background: '#7867E0' }}>
+          <p>dasdasdsad</p>
+          <p>dasdasdsad</p>
+          <p>dasdasdsad</p>
+          <p>dasdasdsad</p>
+        </Box>
 
         <Welcome />
 
