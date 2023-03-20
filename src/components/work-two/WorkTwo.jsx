@@ -77,7 +77,7 @@ export function WorkTwo() {
           <Box>
             <SubtitleContainer name='Desafio' />
             <ParagraphContainer
-              text='Desenvolver vários filtros usando JavaScript puro.'
+              text='Desenvolver vários filtros usando JavaScript puro. Por conta da responsividade houve algumas adaptações para cada tipo de tela.'
             />
           </Box>
 
