@@ -8,7 +8,6 @@ import { BoxContainer, TitleContainer } from '../../containers';
 import { Work } from '../work/Work';
 import { WorkTwo } from '../work-two/WorkTwo'
 
-
 function TabPanel(props) {
   const { children, value, index } = props;
 
@@ -65,7 +64,7 @@ export function BasicTabs() {
             allowScrollButtonsMobile
           >
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Ilha Turism" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 2" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Loja de roupas" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 3" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 4" />
           </Tabs>

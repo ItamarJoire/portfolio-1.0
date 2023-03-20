@@ -2,12 +2,17 @@ import { Box, CardContent, CardMedia, Grid, Link, ListItemText } from '@mui/mate
 import { SubtitleContainer, ParagraphContainer } from '../../containers';
 
 import IconExternalLink from '../../assets/images/icon-external-link.svg'
+import IconGitWhite from '../../assets/images/git-icon-white.svg'
+
 import IconCircle from '../../assets/images/icon-circle.svg'
 
+import ImageProject from '../../assets/images/m3.png'
+
 const techs = [
-  'React',
-  'NodeJs',
-  'Material UI'
+  'Html',
+  'Scss',
+  'JavaScript',
+  'Axios'
 ]
 
 export function WorkTwo() {
@@ -16,8 +21,9 @@ export function WorkTwo() {
       <Grid item xs={12} sm={6}>
         <Box sx={{ pr: { xs: 'auto', sm: 1 } }} >
           <Box sx={{ mt: 4, width: '100%', height: '240px' }}>
+
             <CardMedia
-              image={"https://source.unsplash.com/random/?technology/91"}
+              image={ImageProject}
               sx={{ width: '100%', height: '100%', borderRadius: 2 }}
             >
               <Box
@@ -32,8 +38,8 @@ export function WorkTwo() {
                 }}
               >
                 <CardContent sx={{ display: 'flex', justifyContent: 'end', p: 2 }}>
-                  <Link href={'https://github.com/ItamarJoire'} target='_blank' sx={{ cursor: 'pointer' }}>
-                    <img src={IconExternalLink} alt='Ícone para abrir projeto' />
+                  <Link href={'https://github.com/ItamarJoire/digitalm3-vtex'} target='_blank' sx={{ cursor: 'pointer' }}>
+                    <img src={IconGitWhite} alt='Ícone para abrir projeto' />
                   </Link>
                 </CardContent>
               </Box>
@@ -62,26 +68,25 @@ export function WorkTwo() {
         }}
         >
           <Box>
-            <SubtitleContainer name='Minha função' />
+            <SubtitleContainer name='Sobre' />
             <ParagraphContainer
-              text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis velit itaque molestiae praesentium tempore  nam.'
+              text='E-commerce de roupas femininas.'
             />
           </Box>
 
           <Box>
-            <SubtitleContainer name='Dificuldades do projeto' />
+            <SubtitleContainer name='Desafio' />
             <ParagraphContainer
-              text='Lorem ipsum dolor sit, amet consectetur <adipisicing elit. Corporis velit itaque molestiae praesentium tempore nam.'
+              text='Desenvolver vários filtros usando JavaScript puro.'
             />
           </Box>
 
           <Box>
-            <SubtitleContainer name='Minha solucão' />
+            <SubtitleContainer name='Solução' />
             <ParagraphContainer
-              text='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis velit itaque molestiae praesentium tempore nam.'
+              text='Trabalhei criando uma função para cada tipo de filtro.'
             />
           </Box>
-
         </Box>
       </Grid>
     </Grid >

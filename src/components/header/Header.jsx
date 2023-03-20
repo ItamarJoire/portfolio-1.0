@@ -1,5 +1,8 @@
 import { Box, Typography, Link, useTheme, useMediaQuery } from '@mui/material'
 
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 import { useState } from 'react';
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -7,7 +10,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 export function Header() {
   const theme = useTheme()
   const smDown = useMediaQuery(theme.breakpoints.down('sm'))
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState('none')
 
   const onButtonClick = () => {
     // using Java Script method to get PDF file
@@ -60,6 +63,6 @@ export function Header() {
           CURRÍCULO<Box component='span' color='#51459E'>.</Box>
         </Typography>
       </Link>
-    </Box>)
-
+    </Box>
+  )
 }

@@ -2,6 +2,9 @@ import { Box, CardContent, CardMedia, Grid, Link, ListItemText } from '@mui/mate
 import { SubtitleContainer, ParagraphContainer } from '../../containers';
 
 import IconExternalLink from '../../assets/images/icon-external-link.svg'
+import IconGitWhite from '../../assets/images/git-icon-white.svg'
+
+
 import IconCircle from '../../assets/images/icon-circle.svg'
 
 import ImageProject from '../../assets/images/cover-ilha-turism.png'
@@ -10,7 +13,9 @@ const techs = [
   'React',
   'TypeScript',
   'Material UI',
-  'React Slick'
+  'React Slick',
+  'Node',
+  'Axios'
 ]
 
 export function Work() {
@@ -37,7 +42,7 @@ export function Work() {
               >
                 <CardContent sx={{ display: 'flex', justifyContent: 'end', p: 2 }}>
                   <Link href={'https://github.com/ItamarJoire/site-turism'} target='_blank' sx={{ cursor: 'pointer' }}>
-                    <img src={IconExternalLink} alt='Ícone para abrir projeto' />
+                    <img src={IconGitWhite} alt='Ícone para abrir projeto' />
                   </Link>
                 </CardContent>
               </Box>
@@ -82,7 +87,7 @@ export function Work() {
           <Box>
             <SubtitleContainer name='Solução' />
             <ParagraphContainer
-              text='Utilizei o framework Material UI para agilizar, principalmente, na responsividade e padronizar cores, textos e etc. E o React Slick por conta da facilidade de construir os carrosséis.'
+              text='Utilizei o framework Material UI para agilizar, principalmente, na responsividade. E o React Slick por conta da facilidade de construir os carrosséis.'
             />
           </Box>
         </Box>
