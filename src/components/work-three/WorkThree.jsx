@@ -83,7 +83,7 @@ export function WorkThree() {
           <Box>
             <SubtitleContainer name='Solução' />
             <ParagraphContainer
-              text='Tentando faciliar este atendimento e para converter estes leads conversei com o gestor comercial da empresa e perguntei os gatilhos para fazer um bom atendimento. Como iniciar uma conversa? Como levar a conversa? Foi desenvolvido este gerador de script simples que facilitou bastante para os vendedores.'
+              text='Tentando faciliar este atendimento e para converter estes leads conversei com o gestor comercial da empresa e perguntei os gatilhos para fazer um bom atendimento. Como iniciar uma conversa? Como levar a conversa? Após entender desenvolvi este gerador de script simples que facilitou bastante para os vendedores.'
             />
           </Box>
         </Box>
