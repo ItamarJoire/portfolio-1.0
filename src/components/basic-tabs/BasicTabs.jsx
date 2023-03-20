@@ -7,6 +7,7 @@ import { useTheme, useMediaQuery } from '@mui/material';
 import { BoxContainer, TitleContainer } from '../../containers';
 import { Work } from '../work/Work';
 import { WorkTwo } from '../work-two/WorkTwo'
+import { WorkThree } from '../work-three/WorkThree'
 
 function TabPanel(props) {
   const { children, value, index } = props;
@@ -65,7 +66,7 @@ export function BasicTabs() {
           >
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Ilha Turism" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Loja de roupas" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 3" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Script de vendas" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 4" />
           </Tabs>
         </Box>
@@ -78,7 +79,7 @@ export function BasicTabs() {
             <WorkTwo />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            Item 4
+            <WorkThree />
           </TabPanel>
           <TabPanel value={value} index={3}>
             Item 5
