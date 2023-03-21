@@ -60,7 +60,7 @@ export function Header() {
           mr='16px'
           cursor='pointer'
         >
-          CURRÍCULO<Box component='span' color='#51459E'>.</Box>
+          DOWNLOAD CV<Box component='span' color='#51459E'>.</Box>
         </Typography>
       </Link>
     </Box>
