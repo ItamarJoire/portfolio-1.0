@@ -1,6 +1,7 @@
 import { Box, Typography, Link, useTheme, useMediaQuery } from '@mui/material'
 
 import MenuIcon from '@mui/icons-material/Menu';
+import MenuHamburguerIcon from '../../assets/images/menu-hamburguer-right.svg'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -25,7 +26,6 @@ export function Header({ setMenuIsVisible }) {
 
   return (
     <>
-
       {smDown === false ? (<Box
         sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, p: 4 }}>
         <AnchorLink href='#about' offset='-80' style={{ color: 'white', textDecoration: 'none' }}>
@@ -61,11 +61,16 @@ export function Header({ setMenuIsVisible }) {
             DOWNLOAD CV<Box component='span' color='#51459E'>.</Box>
           </Typography>
         </Link>
-      </Box>)
-        :
-        (<Box>
-          <MenuIcon onClick={() => setMenuIsVisible(true)} className='mobile' />
-        </Box>)}
+
+      </Box>) : (
+
+        <Box sx={{ p: theme.spacing(2), textAlign: 'right' }}>
+          <img src={MenuHamburguerIcon} onClick={() => setMenuIsVisible(true)} />
+        </Box>
+
+      )
+      }
+
     </>
   )
 }
