@@ -1,6 +1,5 @@
 import { Box, Typography, Link, useTheme, useMediaQuery } from '@mui/material'
 
-import MenuIcon from '@mui/icons-material/Menu';
 import MenuHamburguerIcon from '../../assets/images/menu-hamburguer-right.svg'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
