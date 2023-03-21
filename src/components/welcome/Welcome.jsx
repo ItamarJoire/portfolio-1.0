@@ -49,7 +49,7 @@ export function Welcome() {
             <Link mr={2} href='https://github.com/ItamarJoire' target='_blank'>
               <img src={IconGithub} alt='' />
             </Link>
-            <Link href='https://github.com/ItamarJoire' target='_blank'>
+            <Link href='https://dribbble.com/ijoire7/shots' target='_blank'>
               <img src={IconDribbble} alt='' />
             </Link>
           </Box>
