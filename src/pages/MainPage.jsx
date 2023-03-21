@@ -1,16 +1,24 @@
 import { Header, Welcome, About, BasicTabs, Footer, BackToTop, PreLoader } from "../components"
-import { Box, Divider, useTheme, useMediaQuery } from '@mui/material'
+import { Box, Divider } from '@mui/material'
 
-import MenuIcon from '@mui/icons-material/Menu';
+import { useState } from "react";
+
+import { MenuMobile } from "../components";
 
 export function MainPage() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
+
   return (
     <>
       <PreLoader />
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+
 
       <Box sx={{ height: '100vh' }}>
-
-        <Header />
+        <Header setMenuIsVisible={setMenuIsVisible} />
 
         <Welcome />
 
