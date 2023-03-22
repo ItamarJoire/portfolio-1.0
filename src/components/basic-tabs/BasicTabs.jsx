@@ -67,7 +67,7 @@ export function BasicTabs() {
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Ilha Turism" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Loja de roupas" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Script de vendas" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Projeto 4" />
+
           </Tabs>
         </Box>
 
@@ -81,10 +81,6 @@ export function BasicTabs() {
           <TabPanel value={value} index={2}>
             <WorkThree />
           </TabPanel>
-          <TabPanel value={value} index={3}>
-            Item 5
-          </TabPanel>
-
         </Box>
       </Box >
     </BoxContainer >

@@ -18,7 +18,7 @@ export function Welcome() {
     }}
     >
       <Box sx={{
-        height: '64vh',
+        height: '60vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
