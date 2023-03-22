@@ -24,7 +24,7 @@ export function WorkTwo() {
 
             <CardMedia
               image={ImageProject}
-              sx={{ width: '100%', height: '100%', borderRadius: 2 }}
+              sx={{ width: '100%', maxWidth: '440px', height: '100%', borderRadius: 2 }}
             >
               <Box
                 sx={{
