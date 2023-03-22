@@ -1,9 +1,7 @@
 import { Box, CardContent, CardMedia, Grid, Link, ListItemText } from '@mui/material';
 import { SubtitleContainer, ParagraphContainer } from '../../containers';
 
-import IconExternalLink from '../../assets/images/icon-external-link.svg'
 import IconGitWhite from '../../assets/images/git-icon-white.svg'
-
 
 import IconCircle from '../../assets/images/icon-circle.svg'
 
@@ -37,7 +35,8 @@ export function Work() {
                   justifyContent: 'space-between',
                   alignItems: 'space-around',
                   height: '100%',
-                  background: 'linear-gradient(359.44deg, #08081D -6.72%, rgba(0, 0, 0, 0) 99.48%)'
+                  borderRadius: 2,
+                  background: 'linear-gradient(179.57deg, rgba(8, 8, 29, 0.85) -37.04%, rgba(8, 8, 29, 0.46) 121.41%);'
                 }}
               >
                 <CardContent sx={{ display: 'flex', justifyContent: 'end', p: 2 }}>
