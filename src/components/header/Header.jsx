@@ -4,6 +4,8 @@ import MenuHamburguerIcon from '../../assets/images/menu-hamburguer-right.svg'
 
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
+import './styles.css'
+
 export function Header({ setMenuIsVisible }) {
   const theme = useTheme()
   const smDown = useMediaQuery(theme.breakpoints.down('sm'))
@@ -28,7 +30,7 @@ export function Header({ setMenuIsVisible }) {
       {smDown === false ? (<Box
         sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, p: 4 }}>
         <AnchorLink href='#about' offset='-80' style={{ color: 'white', textDecoration: 'none' }}>
-          <Typography
+          <Typography className='hoverCurriculo'
             variant='h5'
             textTransform='uppercase'
             mr='16px'
@@ -38,7 +40,7 @@ export function Header({ setMenuIsVisible }) {
         </AnchorLink>
 
         <AnchorLink href='#projects' style={{ color: 'white', textDecoration: 'none' }}>
-          <Typography
+          <Typography className='hoverCurriculo'
             variant='h5'
             textTransform='uppercase'
             mr='16px'
@@ -51,16 +53,16 @@ export function Header({ setMenuIsVisible }) {
           sx={{ cursor: 'pointer', textDecoration: 'none', color: '#fff' }}
           onClick={onButtonClick}
         >
-          <Typography
+          <Typography className='hoverCurriculo'
             variant='h5'
             textTransform='uppercase'
             mr='16px'
             cursor='pointer'
+
           >
             DOWNLOAD CV<Box component='span' color='#51459E'>.</Box>
           </Typography>
         </Link>
-
       </Box>) : (
 
         <Box sx={{ p: theme.spacing(2), textAlign: 'right' }}>

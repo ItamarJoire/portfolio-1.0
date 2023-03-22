@@ -15,7 +15,7 @@ export const theme = createTheme({
     }
   },
 
-  typography: {   
+  typography: {
     fontFamily: '"Rubik", sans-serif',
   },
 })
@@ -43,7 +43,7 @@ theme.typography.h2 = {
   fontSize: 38,
   fontWeight: 700,
   lineHeight: '105%',
-  
+
   [theme.breakpoints.up('sm')]: {
     fontSize: 48
   },
@@ -66,7 +66,7 @@ theme.typography.h6 = {
   fontWeight: 700,
   lineHeight: '100%',
   color: '#1B1B30',
-  
+
   [theme.breakpoints.up('sm')]: {
     fontSize: 28
   },

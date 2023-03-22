@@ -15,6 +15,8 @@ export const Container = styled.section`
 
   background: #7867E0;
 
+  transition: .5s;
+
   opacity: 0;
   pointer-events: none;
   
