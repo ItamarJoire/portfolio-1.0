@@ -24,7 +24,7 @@ export function About() {
             maxWidth='100%'
             sx={{ mt: 4 }}
           >
-            Olá, meu nome é Itamar Joire e gosto de desenvolver para web. Desde a concepção da interface do usuário até a codificação.  Sempre com foco em garantir uma melhor experiência para o usuário. Gosto de trabalhar em equipe e de participar de todo processo criativo.
+            Olá, meu nome é Itamar Joire e gosto de desenvolver para web, desde a concepção da interface até a codificação, sempre com foco em garantir uma melhor experiência para o usuário. Gosto de trabalhar em equipe e de participar de todo processo criativo.
             <br />
             <br />
             Estou cursando Sistemas de Informação pela UFBA com previsão de conclusão para 2024.2.
