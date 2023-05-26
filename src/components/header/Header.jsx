@@ -27,49 +27,56 @@ export function Header({ setMenuIsVisible }) {
 
   return (
     <>
-      {smDown === false ? (<Box
-        sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'end' }, p: 4 }}>
-        <AnchorLink href='#about' offset='-80' style={{ color: 'white', textDecoration: 'none' }}>
-          <Typography className='hoverCurriculo'
-            variant='h5'
-            textTransform='uppercase'
-            mr='16px'
-          >
-            SOBRE MIM<Box component='span' color='#51459E'>.</Box>
-          </Typography>
-        </AnchorLink>
+      {smDown === false ?
+        (
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: { xs: 'center', sm: 'end', lg: 'end' },
+              width: { lg: '88%' },
+              p: 4
+            }}>
+            <AnchorLink href='#about' offset='-80' style={{ color: 'white', textDecoration: 'none' }}>
+              <Typography className='hoverCurriculo'
+                variant='h5'
+                textTransform='uppercase'
+                mr='16px'
+              >
+                SOBRE MIM<Box component='span' color='#51459E'>.</Box>
+              </Typography>
+            </AnchorLink>
 
-        <AnchorLink href='#projects' style={{ color: 'white', textDecoration: 'none' }}>
-          <Typography className='hoverCurriculo'
-            variant='h5'
-            textTransform='uppercase'
-            mr='16px'
-          >
-            PROJETOS<Box component='span' color='#51459E'>.</Box>
-          </Typography>
-        </AnchorLink>
+            <AnchorLink href='#projects' style={{ color: 'white', textDecoration: 'none' }}>
+              <Typography className='hoverCurriculo'
+                variant='h5'
+                textTransform='uppercase'
+                mr='16px'
+              >
+                PROJETOS<Box component='span' color='#51459E'>.</Box>
+              </Typography>
+            </AnchorLink>
 
-        <Link
-          sx={{ cursor: 'pointer', textDecoration: 'none', color: '#fff' }}
-          onClick={onButtonClick}
-        >
-          <Typography className='hoverCurriculo'
-            variant='h5'
-            textTransform='uppercase'
-            mr='16px'
-            cursor='pointer'
+            <Link
+              sx={{ cursor: 'pointer', textDecoration: 'none', color: '#fff' }}
+              onClick={onButtonClick}
+            >
+              <Typography className='hoverCurriculo'
+                variant='h5'
+                textTransform='uppercase'
+                mr='16px'
+                cursor='pointer'
 
-          >
-            DOWNLOAD CV<Box component='span' color='#51459E'>.</Box>
-          </Typography>
-        </Link>
-      </Box>) : (
+              >
+                DOWNLOAD CV<Box component='span' color='#51459E'>.</Box>
+              </Typography>
+            </Link>
+          </Box>) : (
 
-        <Box sx={{ p: theme.spacing(2), textAlign: 'right' }}>
-          <img src={MenuHamburguerIcon} onClick={() => setMenuIsVisible(true)} />
-        </Box>
+          <Box sx={{ p: theme.spacing(2), textAlign: 'right' }}>
+            <img src={MenuHamburguerIcon} onClick={() => setMenuIsVisible(true)} />
+          </Box>
 
-      )
+        )
       }
 
     </>

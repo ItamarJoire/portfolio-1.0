@@ -6,7 +6,7 @@ export function BoxContainer({ children }) {
       sx={{
         my: { xs: 12, sm: 10, lg: 14 },
         mx: { xs: 2, sm: 10, lg: 'auto' },
-        width: { lg: '80%' },
+        width: { lg: '74%' },
 
 
       }}
