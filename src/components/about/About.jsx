@@ -46,6 +46,14 @@ export function About() {
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
                 <ListItemText primary='React' />
               </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='NodeJs' />
+              </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='MySQL' />
+              </Box>
             </Box>
 
             <Box>
@@ -62,6 +70,7 @@ export function About() {
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
                 <ListItemText primary='Figma' />
               </Box>
+             
             </Box>
           </List>
         </BoxContainer>
