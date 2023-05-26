@@ -48,11 +48,20 @@ export function About() {
               </Box>
               <Box display='flex'>
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='Handlebars' />
+              </Box>
+         
+            </Box>
+
+            <Box mr={8}>
+            <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
                 <ListItemText primary='NodeJs' />
               </Box>
+         
               <Box display='flex'>
-                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
-                <ListItemText primary='MySQL' />
+                  <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                  <ListItemText primary='MySQL' />
               </Box>
             </Box>
 
