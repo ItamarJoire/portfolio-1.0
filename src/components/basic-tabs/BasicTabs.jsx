@@ -66,8 +66,8 @@ export function BasicTabs() {
             allowScrollButtonsMobile
           >
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="TodoList" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Ilha Turism" />
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Loja de roupas" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Turism" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Loja de Roupas" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Script de vendas" />
 
           </Tabs>
@@ -78,14 +78,15 @@ export function BasicTabs() {
             <WorkFour />
           </TabPanel>
           <TabPanel value={value} index={1}>
-            <WorkTwo />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
-            <WorkThree />
-          </TabPanel>
-          <TabPanel value={value} index={2}>
             <Work />
           </TabPanel>
+          <TabPanel value={value} index={2}>
+            <WorkTwo />
+          </TabPanel>
+          <TabPanel value={value} index={3}>
+            <WorkThree />
+          </TabPanel>
+          
         </Box>
       </Box >
     </BoxContainer >
