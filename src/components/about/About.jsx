@@ -34,7 +34,7 @@ export function About() {
           </Typography>
           <List sx={{ display: 'flex' }}>
             <Box >
-              <Box display='flex' mr={8}>
+              <Box display='flex' mr={4}>
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
                 <ListItemText primary='JavaScript' />
               </Box>
@@ -53,7 +53,7 @@ export function About() {
          
             </Box>
 
-            <Box mr={8}>
+            <Box mr={4}>
             <Box display='flex'>
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
                 <ListItemText primary='NodeJs' />
