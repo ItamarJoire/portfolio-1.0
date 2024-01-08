@@ -30,7 +30,7 @@ export function About() {
             Estou cursando Sistemas de Informação pela UFBA com previsão de conclusão para 2024.2.
             <br />
             <br />
-            Aqui estão algumas tecnologias com as quais trabalho recentemente:
+            Aqui estão algumas tecnologias com as quais trabalho atualmente:
           </Typography>
           <List sx={{ display: 'flex' }}>
             <Box >
