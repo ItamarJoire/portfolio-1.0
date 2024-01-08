@@ -68,12 +68,16 @@ export function About() {
             <Box>
               <Box display='flex'>
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
-                <ListItemText primary='Scss' />
+                <ListItemText primary='Sass' />
               </Box>
 
               <Box display='flex'>
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
                 <ListItemText primary='Material UI' />
+              </Box>
+              <Box display='flex'>
+                <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />
+                <ListItemText primary='Tailwinds' />
               </Box>
               <Box display='flex'>
                 <img src={IconCircle} alt='' style={{ marginRight: '8px' }} />

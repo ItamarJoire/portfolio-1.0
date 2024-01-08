@@ -12,7 +12,7 @@ const techs = [
   'TypeScript',
   'Material UI',
   'React Slick',
-  'Node',
+  'Nodejs',
   'Axios'
 ]
 

@@ -11,7 +11,7 @@ const techs = [
   'Handlebars',
   'JavaScript',
   'Scss',
-  'NodeJs',
+  'Nodejs',
   'Sequelize',
   'MySQL'
 ]
