@@ -3,6 +3,7 @@ import { Box, Link } from '@mui/material'
 import LinkedinImg from '../../assets/images/linkedin-icon-desktop.svg'
 import GithubImg from '../../assets/images/github-icon-desktop.svg'
 import DribbbleImg from '../../assets/images/dribbble-icon-desktop.svg'
+import BehanceImg from '../../assets/images/behance-icon-desktop.svg'
 
 export function Social() {
   return (
@@ -25,13 +26,22 @@ export function Social() {
           <img src={GithubImg} alt='' />
         </Link>
       </Box>
-      <Box sx={{ bgcolor: '#ED3675', px: 1.4, pt: 1.4, pb: .6, borderTopRightRadius: 6, borderBottomRightRadius: 6 }}
+      {/* <Box sx={{ bgcolor: '#ED3675', px: 1.4, pt: 1.4, pb: .6, borderTopRightRadius: 6, borderBottomRightRadius: 6 }}
       >
         <Link
           href='https://dribbble.com/ijoire7/shots'
           target='_blank'
         >
           <img src={DribbbleImg} alt='' />
+        </Link>
+      </Box> */}
+      <Box sx={{ bgcolor: '#ED3675', px: 1.4, pt: 1.4, pb: .6, borderTopRightRadius: 6, borderBottomRightRadius: 6 }}
+      >
+        <Link
+          href='https://www.behance.net/itamarjoire'
+          target='_blank'
+        >
+          <img src={BehanceImg} alt='' />
         </Link>
       </Box>
     </Box>

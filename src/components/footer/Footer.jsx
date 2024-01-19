@@ -2,6 +2,7 @@ import { Box, Typography, Link, useTheme, useMediaQuery } from '@mui/material'
 import IconLinkedin from '../../assets/images/linkedin-icon-mobile.svg'
 import IconGithub from '../../assets/images/github-icon-mobile.svg'
 import IconDribbble from '../../assets/images/dribbble-icon-mobile.svg'
+import IconBehance from '../../assets/images/behance-icon-mobile.svg'
 
 export function Footer() {
   const theme = useTheme()
@@ -31,8 +32,11 @@ export function Footer() {
           <Link mr={2} href='https://github.com/ItamarJoire' target='_blank'>
             <img src={IconGithub} alt='' />
           </Link>
-          <Link href='https://dribbble.com/ijoire7/shots' target='_blank'>
+          {/* <Link href='https://dribbble.com/ijoire7/shots' target='_blank'>
             <img src={IconDribbble} alt='' />
+          </Link> */}
+          <Link href='https://www.behance.net/itamarjoire' target='_blank'>
+            <img src={IconBehance} alt='' />
           </Link>
         </Box>
       }
