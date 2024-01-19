@@ -9,6 +9,7 @@ import { Work } from '../work/Work';
 import { WorkTwo } from '../work-two/WorkTwo'
 import { WorkThree } from '../work-three/WorkThree'
 import { WorkFour } from '../work-four/WorkFour'
+import { WorkFive } from '../work-five/WorkFive'
 
 function TabPanel(props) {
   const { children, value, index } = props;
@@ -65,8 +66,9 @@ export function BasicTabs() {
             scrollButtons='auto'
             allowScrollButtonsMobile
           >
-            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="TodoList" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Turism" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="BeaultySalon" />
+            <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="TodoList" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Loja de Roupas" />
             <Tab sx={{ textTransform: 'capitalize', color: '#9EA0A3', fontSize: 17 }} label="Script de vendas" />
 
@@ -75,15 +77,18 @@ export function BasicTabs() {
 
         <Box>
           <TabPanel value={value} index={0}>
-            <WorkFour />
-          </TabPanel>
-          <TabPanel value={value} index={1}>
             <Work />
           </TabPanel>
+          <TabPanel value={value} index={1}>
+            <WorkFive />
+          </TabPanel>
           <TabPanel value={value} index={2}>
-            <WorkTwo />
+            <WorkFour />
           </TabPanel>
           <TabPanel value={value} index={3}>
+            <WorkTwo />
+          </TabPanel>
+          <TabPanel value={value} index={4}>
             <WorkThree />
           </TabPanel>
           
